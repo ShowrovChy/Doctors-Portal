@@ -46,7 +46,7 @@ const BookingModal = ({ handleModalClose, openModal, booking, date }) => {
       date: date.toLocaleDateString(),
     };
     //send to server
-    fetch("http://localhost:5000/appointments", {
+    fetch("https://murmuring-escarpment-26577.herokuapp.com/appointments", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(appointment),
